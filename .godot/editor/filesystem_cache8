@@ -1,3 +1,8 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1706321927
+::res://::1706326199
 icon.svg::CompressedTexture2D::4205067198872652269::1706319737::1706319751::1::::<><>::
+main_scene.tscn::PackedScene::7492760850890834743::1706325832::0::1::::<><>::uid://glj1d1dqxxek::::res://assets/worldassets/Driveway.png<>uid://b0573v2uahyxh::::res://icon.svg
+::res://assets/::1706326199
+_CrouchAttack.png::CompressedTexture2D::2269415180971954576::1706326192::1706326199::1::::<><>::
+::res://assets/worldassets/::1706325184
+Driveway.png::CompressedTexture2D::444434298592860934::1706325184::1706325184::1::::<><>::

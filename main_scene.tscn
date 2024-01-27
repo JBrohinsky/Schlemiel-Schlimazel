@@ -1,0 +1,112 @@
+[gd_scene load_steps=9 format=3 uid="uid://de0sxabqe5cux"]
+
+[ext_resource type="Texture2D" uid="uid://glj1d1dqxxek" path="res://assets/worldassets/Driveway.png" id="1_u2duu"]
+[ext_resource type="Script" path="res://Shoveler.gd" id="2_6rj35"]
+[ext_resource type="Script" path="res://TileMap.gd" id="2_48tgx"]
+[ext_resource type="SpriteFrames" uid="uid://7wkgr8puvi6a" path="res://assets/shoveler.tres" id="2_q40ul"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_cpna2"]
+texture = ExtResource("1_u2duu")
+texture_region_size = Vector2i(56, 56)
+0:0/next_alternative_id = 4
+0:0/0 = 0
+0:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+0:0/0/physics_layer_0/angular_velocity = 0.0
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-28, -28, 28, -28, 28, 28, -28, 28)
+1:0/0 = 0
+1:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+1:0/0/physics_layer_0/angular_velocity = 0.0
+1:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-28, -28, 28, -28, 28, 28, -28, 28)
+2:0/0 = 0
+2:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+2:0/0/physics_layer_0/angular_velocity = 0.0
+3:0/0 = 0
+3:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+3:0/0/physics_layer_0/angular_velocity = 0.0
+4:0/0 = 0
+4:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+4:0/0/physics_layer_0/angular_velocity = 0.0
+5:0/0 = 0
+5:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+5:0/0/physics_layer_0/angular_velocity = 0.0
+6:0/0 = 0
+6:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+6:0/0/physics_layer_0/angular_velocity = 0.0
+0:1/0 = 0
+0:1/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+0:1/0/physics_layer_0/angular_velocity = 0.0
+1:1/0 = 0
+1:1/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+1:1/0/physics_layer_0/angular_velocity = 0.0
+2:1/0 = 0
+2:1/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+2:1/0/physics_layer_0/angular_velocity = 0.0
+3:1/0 = 0
+3:1/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+3:1/0/physics_layer_0/angular_velocity = 0.0
+4:1/0 = 0
+4:1/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+4:1/0/physics_layer_0/angular_velocity = 0.0
+5:1/0 = 0
+5:1/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+5:1/0/physics_layer_0/angular_velocity = 0.0
+6:1/0 = 0
+6:1/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+6:1/0/physics_layer_0/angular_velocity = 0.0
+0:2/0 = 0
+0:2/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+0:2/0/physics_layer_0/angular_velocity = 0.0
+1:2/0 = 0
+1:2/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+1:2/0/physics_layer_0/angular_velocity = 0.0
+2:2/0 = 0
+2:2/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+2:2/0/physics_layer_0/angular_velocity = 0.0
+3:2/0 = 0
+3:2/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+3:2/0/physics_layer_0/angular_velocity = 0.0
+4:2/0 = 0
+4:2/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+4:2/0/physics_layer_0/angular_velocity = 0.0
+5:2/0 = 0
+5:2/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+5:2/0/physics_layer_0/angular_velocity = 0.0
+6:2/0 = 0
+6:2/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+6:2/0/physics_layer_0/angular_velocity = 0.0
+
+[sub_resource type="TileSet" id="TileSet_p5x8q"]
+tile_size = Vector2i(56, 56)
+physics_layer_0/collision_layer = 1
+sources/0 = SubResource("TileSetAtlasSource_cpna2")
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_ffy8e"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_hie0l"]
+size = Vector2(50, 34)
+
+[node name="MainScene" type="Node2D"]
+
+[node name="TileMap" type="TileMap" parent="."]
+position = Vector2(0, 488)
+tile_set = SubResource("TileSet_p5x8q")
+format = 2
+layer_0/tile_data = PackedInt32Array(0, 0, 0, 1, 65536, 0, 3, 65536, 0, 4, 65536, 0, 5, 65536, 0, 6, 65536, 0, 7, 65536, 0, 8, 65536, 0, 9, 65536, 0, 2, 65536, 0)
+script = ExtResource("2_48tgx")
+
+[node name="Shoveler" type="RigidBody2D" parent="."]
+position = Vector2(20, 426)
+physics_material_override = SubResource("PhysicsMaterial_ffy8e")
+script = ExtResource("2_6rj35")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Shoveler"]
+position = Vector2(-15, 23)
+scale = Vector2(2, 2)
+shape = SubResource("RectangleShape2D_hie0l")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Shoveler"]
+position = Vector2(11, -25)
+scale = Vector2(2, 2)
+sprite_frames = ExtResource("2_q40ul")
+
+[connection signal="shovel" from="Shoveler" to="TileMap" method="_on_shoveler_shovel"]
