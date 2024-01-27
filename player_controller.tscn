@@ -1,0 +1,129 @@
+[gd_scene load_steps=12 format=3 uid="uid://c0gtdb3t1arxw"]
+
+[ext_resource type="Script" path="res://player_controller.gd" id="1_i1v4b"]
+[ext_resource type="Texture2D" uid="uid://glj1d1dqxxek" path="res://assets/worldassets/Driveway.png" id="1_tytjm"]
+[ext_resource type="Texture2D" uid="uid://6ayiovc4wsn4" path="res://assets/worldassets/Driveway28.png" id="2_md5iu"]
+[ext_resource type="Script" path="res://TileMap.gd" id="3_3251b"]
+[ext_resource type="Script" path="res://Shoveler.gd" id="4_2v6e0"]
+[ext_resource type="Texture2D" uid="uid://n2ye4n4wd17n" path="res://assets/Snowplow.png" id="5_j4rgh"]
+[ext_resource type="SpriteFrames" uid="uid://7wkgr8puvi6a" path="res://assets/shoveler.tres" id="5_xkiym"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_cpna2"]
+texture = ExtResource("1_tytjm")
+texture_region_size = Vector2i(28, 56)
+0:0/next_alternative_id = 4
+0:0/0 = 0
+0:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+0:0/0/physics_layer_0/angular_velocity = 0.0
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-28, -28, 28, -28, 28, 28, -28, 28)
+1:0/0 = 0
+1:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+1:0/0/physics_layer_0/angular_velocity = 0.0
+1:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-28, -28, 28, -28, 28, 28, -28, 28)
+2:0/0 = 0
+2:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+2:0/0/physics_layer_0/angular_velocity = 0.0
+3:0/0 = 0
+3:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+3:0/0/physics_layer_0/angular_velocity = 0.0
+4:0/0 = 0
+4:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+4:0/0/physics_layer_0/angular_velocity = 0.0
+5:0/0 = 0
+5:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+5:0/0/physics_layer_0/angular_velocity = 0.0
+6:0/0 = 0
+6:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+6:0/0/physics_layer_0/angular_velocity = 0.0
+0:1/0 = 0
+0:1/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+0:1/0/physics_layer_0/angular_velocity = 0.0
+1:1/0 = 0
+1:1/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+1:1/0/physics_layer_0/angular_velocity = 0.0
+2:1/0 = 0
+2:1/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+2:1/0/physics_layer_0/angular_velocity = 0.0
+3:1/0 = 0
+3:1/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+3:1/0/physics_layer_0/angular_velocity = 0.0
+4:1/0 = 0
+4:1/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+4:1/0/physics_layer_0/angular_velocity = 0.0
+5:1/0 = 0
+5:1/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+5:1/0/physics_layer_0/angular_velocity = 0.0
+6:1/0 = 0
+6:1/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+6:1/0/physics_layer_0/angular_velocity = 0.0
+0:2/0 = 0
+0:2/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+0:2/0/physics_layer_0/angular_velocity = 0.0
+1:2/0 = 0
+1:2/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+1:2/0/physics_layer_0/angular_velocity = 0.0
+2:2/0 = 0
+2:2/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+2:2/0/physics_layer_0/angular_velocity = 0.0
+3:2/0 = 0
+3:2/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+3:2/0/physics_layer_0/angular_velocity = 0.0
+4:2/0 = 0
+4:2/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+4:2/0/physics_layer_0/angular_velocity = 0.0
+5:2/0 = 0
+5:2/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+5:2/0/physics_layer_0/angular_velocity = 0.0
+6:2/0 = 0
+6:2/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+6:2/0/physics_layer_0/angular_velocity = 0.0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_dx2m0"]
+texture = ExtResource("2_md5iu")
+texture_region_size = Vector2i(28, 56)
+0:0/0 = 0
+0:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+0:0/0/physics_layer_0/angular_velocity = 0.0
+1:0/0 = 0
+1:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+1:0/0/physics_layer_0/angular_velocity = 0.0
+
+[sub_resource type="TileSet" id="TileSet_p5x8q"]
+tile_size = Vector2i(28, 56)
+physics_layer_0/collision_layer = 1
+sources/0 = SubResource("TileSetAtlasSource_cpna2")
+sources/1 = SubResource("TileSetAtlasSource_dx2m0")
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_hie0l"]
+size = Vector2(50, 34)
+
+[node name="PlayerController" type="Node2D"]
+script = ExtResource("1_i1v4b")
+
+[node name="TileMap" type="TileMap" parent="."]
+position = Vector2(0, 488)
+tile_set = SubResource("TileSet_p5x8q")
+format = 2
+layer_0/tile_data = PackedInt32Array(0, 1, 0, 1, 65537, 0, 3, 65537, 0, 4, 65537, 0, 5, 65537, 0, 6, 65537, 0, 7, 65537, 0, 8, 65537, 0, 9, 65537, 0, 2, 65537, 0, 10, 65537, 0, 11, 65537, 0, 12, 65537, 0, 13, 65537, 0, 14, 65537, 0, 15, 65537, 0, 16, 65537, 0, 17, 65537, 0, 18, 65537, 0, 19, 65537, 0, 65535, 1, 0)
+script = ExtResource("3_3251b")
+
+[node name="Snowplow" type="Sprite2D" parent="."]
+position = Vector2(16, 454)
+texture = ExtResource("5_j4rgh")
+
+[node name="Shoveler" type="CharacterBody2D" parent="."]
+position = Vector2(20, 426)
+script = ExtResource("4_2v6e0")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Shoveler"]
+position = Vector2(-15, 23)
+scale = Vector2(2, 2)
+shape = SubResource("RectangleShape2D_hie0l")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Shoveler"]
+position = Vector2(12, -21)
+scale = Vector2(2, 2)
+sprite_frames = ExtResource("5_xkiym")
+
+[connection signal="animation_finished" from="Shoveler/AnimatedSprite2D" to="TileMap" method="_on_animated_sprite_2d_animation_finished"]
+[connection signal="animation_finished" from="Shoveler/AnimatedSprite2D" to="Shoveler" method="_on_animated_sprite_2d_animation_finished"]

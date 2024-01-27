@@ -1,5 +1,5 @@
+TileMap
 CharacterBody2D
 AnimatedSprite2D
 CollisionShape2D
 RigidBody2D
-TileMap
