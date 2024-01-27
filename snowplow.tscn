@@ -1,23 +1,33 @@
-[gd_scene load_steps=3 format=3 uid="uid://phnel5y07u84"]
+[gd_scene load_steps=5 format=3 uid="uid://phnel5y07u84"]
 
 [ext_resource type="Script" path="res://snowplow.gd" id="1_1lr8i"]
 [ext_resource type="Texture2D" uid="uid://cip0hl2hf7wfw" path="res://assets/worldassets/snowplow.png" id="1_3qfh7"]
 
+[sub_resource type="CircleShape2D" id="CircleShape2D_ics2w"]
+radius = 40.1123
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_75r6f"]
+size = Vector2(311, 166)
+
 [node name="SnowPlow" type="Node2D"]
 
-[node name="RigidBody2D" type="RigidBody2D" parent="."]
-collision_layer = 7
-collision_mask = 7
-mass = 25.32
-gravity_scale = 0.5
+[node name="Snowplow" type="RigidBody2D" parent="."]
+mass = 6.18
 script = ExtResource("1_1lr8i")
 
-[node name="Snowplow" type="Sprite2D" parent="RigidBody2D"]
-scale = Vector2(0.302822, 0.279321)
+[node name="Snowplow2" type="Sprite2D" parent="Snowplow"]
+position = Vector2(1, 5)
+scale = Vector2(0.433642, 0.433642)
 texture = ExtResource("1_3qfh7")
 
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="RigidBody2D"]
-position = Vector2(-2, 0)
-scale = Vector2(0.302822, 0.279321)
-build_mode = 1
-polygon = PackedVector2Array(-518.458, 146.785, -518.458, 85.9226, -330.228, -42.9613, -184.928, -42.9613, -115.58, -196.906, 79.2544, -221.967, 274.089, -264.928, 482.132, -179.005, 515.155, -143.204, 515.155, 157.525, 449.109, 182.586, 419.389, 257.768, 313.716, 257.768, 257.577, 182.586, 19.8135, 182.586, -6.60474, 257.768, -112.278, 257.768, -204.741, 164.685, -257.578, 164.685, -260.88, 254.188, -482.132, 254.188, -488.737, 193.326)
+[node name="FrontWheel" type="CollisionShape2D" parent="Snowplow"]
+position = Vector2(-32, 76)
+shape = SubResource("CircleShape2D_ics2w")
+
+[node name="BackWheel" type="CollisionShape2D" parent="Snowplow"]
+position = Vector2(156, 76)
+shape = SubResource("CircleShape2D_ics2w")
+
+[node name="Body" type="CollisionShape2D" parent="Snowplow"]
+position = Vector2(61, -3)
+shape = SubResource("RectangleShape2D_75r6f")

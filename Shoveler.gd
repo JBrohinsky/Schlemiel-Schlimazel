@@ -29,9 +29,9 @@ func shovel_next():
 func _physics_process(delta):
 	velocity = lerp(velocity, Vector2(0,0), 0.99 * delta)
 	move_and_slide()
-	for index in get_slide_collision_count():
-		var collision = get_slide_collision(index)
-		print(collision)
+	#for index in get_slide_collision_count():
+		#var collision = get_slide_collision(index)
+		#print(collision)
 
 func _process(_delta):
 	if Input.is_action_pressed($"..".move_input) and can_move:
