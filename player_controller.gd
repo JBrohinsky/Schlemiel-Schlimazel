@@ -1,5 +1,6 @@
 extends Node2D
 @export var player_num : int = 0
+@export var move_input := "space"
 
 # Called when the node enters the scene tree for the first time.
 func _ready():

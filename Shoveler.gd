@@ -22,19 +22,24 @@ func shovel_next():
 	if $"..".player_num == 2:
 		direction = -1
 
-	velocity.x = 35 * direction
+	velocity.x = 40 * direction
 	$AnimatedSprite2D.play("default")
 	#shovel.emit()
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _physics_process(delta):
-	velocity = lerp(velocity, Vector2(0,0), 0.95 * delta)
+	velocity = lerp(velocity, Vector2(0,0), 0.99 * delta)
 	move_and_slide()
 
 func _process(_delta):
-	if Input.is_action_pressed("space") and can_move:
+	if Input.is_action_pressed($"..".move_input) and can_move:
 		shovel_next()
 		can_move = false
+	print("velocity.x" + str(velocity.x))
+	if velocity.x <= 11.5:
+		can_move = true
+		velocity.x = 0
 
 func _on_animated_sprite_2d_animation_finished():
-	can_move = true # Replace with function body.
+	pass
+	#can_move = true # Replace with function body.

@@ -72,9 +72,11 @@ player_num = 1
 metadata/player_num = 1
 
 [node name="Player2" parent="." instance=ExtResource("1_kwk3m")]
+visible = false
 position = Vector2(1147, 79)
 scale = Vector2(-1, 1)
 player_num = 2
+move_input = "enter"
 metadata/player_num = 2
 
 [node name="TileMap" type="TileMap" parent="."]
@@ -85,7 +87,7 @@ layer_0/tile_data = PackedInt32Array(0, 65536, 0, 131052, 0, 0, 196588, 0, 0, 13
 
 [node name="GPUParticles2D" type="GPUParticles2D" parent="."]
 position = Vector2(551, 1)
-amount = 871
+amount = 10294
 process_material = SubResource("ParticleProcessMaterial_mxx8v")
 lifetime = 10.0
 speed_scale = 2.0
