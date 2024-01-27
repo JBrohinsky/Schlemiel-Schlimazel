@@ -20,6 +20,11 @@ func clear_snow(current_tile : Vector2i):
 
 
 
-func _on_shoveler_shovel():
+#func _on_shoveler_shovel():
+	#clear_snow(Vector2i(tile, 0)) # Replace with function body.
+	#tile += 1
+
+
+func _on_animated_sprite_2d_animation_finished():
 	clear_snow(Vector2i(tile, 0)) # Replace with function body.
 	tile += 1
