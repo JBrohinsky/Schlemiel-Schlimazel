@@ -109,6 +109,7 @@ script = ExtResource("3_3251b")
 
 [node name="Snowplow" type="Sprite2D" parent="."]
 position = Vector2(16, 454)
+scale = Vector2(0.02, 0.02)
 texture = ExtResource("5_j4rgh")
 
 [node name="Shoveler" type="CharacterBody2D" parent="."]
