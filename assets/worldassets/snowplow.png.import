@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://n2ye4n4wd17n"
-path="res://.godot/imported/Snowplow.png-529325a557d56edea7851ae35d0d8d50.ctex"
+uid="uid://cip0hl2hf7wfw"
+path="res://.godot/imported/snowplow.png-bbca956230f0ab17189d1edb217626db.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Snowplow.png"
-dest_files=["res://.godot/imported/Snowplow.png-529325a557d56edea7851ae35d0d8d50.ctex"]
+source_file="res://assets/worldassets/snowplow.png"
+dest_files=["res://.godot/imported/snowplow.png-bbca956230f0ab17189d1edb217626db.ctex"]
 
 [params]
 

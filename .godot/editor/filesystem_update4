@@ -1,7 +1,5 @@
-res://main_scene.tscn
+res://snowplow.tscn
 res://Shoveler.gd
 res://TileMap.gd
 res://assets/shoveler.tres
-res://player_2.gd
-res://player_controller.tscn
-res://player_controller.gd
+res://plow_scene.tscn

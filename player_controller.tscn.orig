@@ -115,7 +115,12 @@ script = ExtResource("3_3251b")
 
 [node name="Snowplow" type="Sprite2D" parent="."]
 position = Vector2(16, 454)
+<<<<<<< Updated upstream
+texture = ExtResource("5_j4rgh")
+=======
+scale = Vector2(0.02, 0.02)
 texture = SubResource("CompressedTexture2D_npue0")
+>>>>>>> Stashed changes
 
 [node name="Shoveler" type="CharacterBody2D" parent="."]
 position = Vector2(20, 426)
