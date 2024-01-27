@@ -3,3 +3,6 @@ res://Shoveler.gd
 res://TileMap.gd
 res://assets/shoveler.tres
 res://plow_scene.tscn
+res://player_controller.gd
+res://player_controller.tscn
+res://snowplow.gd

@@ -10,6 +10,6 @@ func _ready():
 func _physics_process(delta):
 	if Input.is_action_just_pressed("backspace"):
 		#linear_velocity.x = -50000 * delta
-		add_constant_force(Vector2(-500000 * delta,0))
+		add_constant_force(Vector2(-50000000 * delta,0))
 		
 #

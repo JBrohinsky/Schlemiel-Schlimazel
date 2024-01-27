@@ -8,6 +8,7 @@
 [ext_resource type="SpriteFrames" uid="uid://7wkgr8puvi6a" path="res://assets/shoveler.tres" id="5_xkiym"]
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_qfsl6"]
+friction = 0.28
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_cpna2"]
 texture = ExtResource("1_tytjm")
@@ -85,29 +86,30 @@ texture_region_size = Vector2i(28, 56)
 0:0/0 = 0
 0:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 0:0/0/physics_layer_0/angular_velocity = 0.0
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-14, -28, 14, -28, 14, -22.5, -14, -22)
 1:0/0 = 0
 1:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 1:0/0/physics_layer_0/angular_velocity = 0.0
+1:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(14, -28, 14, -20.5, -14, -21, -14, -28)
 
 [sub_resource type="TileSet" id="TileSet_p5x8q"]
 tile_size = Vector2i(28, 56)
-physics_layer_0/collision_layer = 3
-physics_layer_0/collision_mask = 3
+physics_layer_0/collision_layer = 7
+physics_layer_0/collision_mask = 7
 physics_layer_0/physics_material = SubResource("PhysicsMaterial_qfsl6")
 sources/0 = SubResource("TileSetAtlasSource_cpna2")
 sources/1 = SubResource("TileSetAtlasSource_dx2m0")
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_npue0"]
-load_path = "res://.godot/imported/Snowplow.png-529325a557d56edea7851ae35d0d8d50.ctex"
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_hie0l"]
-size = Vector2(50, 34)
+[sub_resource type="CircleShape2D" id="CircleShape2D_sx7d2"]
+radius = 25.2512
 
 [node name="PlayerController" type="Node2D"]
 script = ExtResource("1_i1v4b")
 
 [node name="TileMap" type="TileMap" parent="."]
-position = Vector2(0, 488)
+position = Vector2(1, 514)
 tile_set = SubResource("TileSet_p5x8q")
 format = 2
 layer_0/tile_data = PackedInt32Array(0, 1, 0, 1, 65537, 0, 3, 65537, 0, 4, 65537, 0, 5, 65537, 0, 6, 65537, 0, 7, 65537, 0, 8, 65537, 0, 9, 65537, 0, 2, 65537, 0, 10, 65537, 0, 11, 65537, 0, 12, 65537, 0, 13, 65537, 0, 14, 65537, 0, 15, 65537, 0, 16, 65537, 0, 17, 65537, 0, 18, 65537, 0, 19, 65537, 0, 65535, 1, 0, 20, 65537, 0, 21, 65537, 0, 22, 65537, 0, 23, 65537, 0, 24, 65537, 0, 25, 65537, 0, 26, 65537, 0, 27, 65537, 0, 28, 65537, 0, 29, 65537, 0, 30, 65537, 0, 40, 65537, 0, 39, 65537, 0, 31, 65537, 0, 32, 65537, 0, 33, 65537, 0, 34, 65537, 0, 35, 65537, 0, 36, 65537, 0, 37, 65537, 0, 38, 65537, 0)
@@ -117,14 +119,14 @@ script = ExtResource("3_3251b")
 position = Vector2(16, 454)
 texture = SubResource("CompressedTexture2D_npue0")
 
-[node name="Shoveler" type="CharacterBody2D" parent="."]
-position = Vector2(20, 426)
+[node name="Shoveler" type="CharacterBody2D" parent="." groups=["player"]]
+position = Vector2(42, 442)
 script = ExtResource("4_2v6e0")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Shoveler"]
-position = Vector2(-15, 23)
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Shoveler" groups=["player"]]
+position = Vector2(-5.5, 6.5)
 scale = Vector2(2, 2)
-shape = SubResource("RectangleShape2D_hie0l")
+shape = SubResource("CircleShape2D_sx7d2")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Shoveler"]
 position = Vector2(12, -21)
