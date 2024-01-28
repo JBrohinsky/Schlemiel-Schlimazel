@@ -35,6 +35,8 @@ func _on_begin_button_pressed():
 	$BeginButton.hide()
 	$Timer.start()
 	$Start.hide()
+	$Plowd.hide()
+	$QuickTime.show()
 
 func _on_player_shovel_handler():
 	points += 1
@@ -42,9 +44,9 @@ func _on_player_shovel_handler():
 		game_over()
 
 func game_over():
+	$Timer.stop()
 	$SnowplowComing.hide()
 	$QuickTime.hide()
-	$Timer.stop()
 	$ColorRect.show()
 	$RestartButton.show()
 	$Win.show()

@@ -22,6 +22,10 @@ window/stretch/mode="viewport"
 
 project/assembly_name="Schlemiel Schlimazel"
 
+[editor]
+
+movie_writer/movie_file="C:/temp/gd/Schlemiel Schlimazel/movie.avi"
+
 [input]
 
 space={
