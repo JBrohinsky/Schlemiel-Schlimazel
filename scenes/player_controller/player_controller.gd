@@ -1,6 +1,7 @@
 extends Node2D
 @export var player_num : int = 0
 @export var move_input := "space"
+@export var lerp := true
 
 signal shovel_handler
 

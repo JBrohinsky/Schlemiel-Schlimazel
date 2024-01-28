@@ -84,16 +84,8 @@ position = Vector2(20, 90)
 player_num = 1
 metadata/player_num = 1
 
-[node name="GPUParticles2D" type="GPUParticles2D" parent="."]
-position = Vector2(551, 1)
-amount = 871
-process_material = SubResource("ParticleProcessMaterial_mxx8v")
-texture = ExtResource("6_fss7k")
-lifetime = 10.0
-speed_scale = 2.0
-randomness = 1.0
-
 [node name="QuickTime" parent="." instance=ExtResource("6_h8t0s")]
+visible = false
 position = Vector2(461, 269)
 scale = Vector2(1.695, 1.695)
 
@@ -107,11 +99,23 @@ offset_top = 42.0
 offset_right = 950.0
 offset_bottom = 113.0
 
+[node name="Player_Controller" parent="." instance=ExtResource("5_55lr2")]
+position = Vector2(42, 550)
+
 [node name="ColorRect" type="ColorRect" parent="."]
 offset_left = 3.0
 offset_right = 1156.0
 offset_bottom = 648.0
 color = Color(0, 0, 0, 0.65098)
+
+[node name="GPUParticles2D" type="GPUParticles2D" parent="."]
+position = Vector2(551, 1)
+amount = 871
+process_material = SubResource("ParticleProcessMaterial_mxx8v")
+texture = ExtResource("6_fss7k")
+lifetime = 10.0
+speed_scale = 2.0
+randomness = 1.0
 
 [node name="BeginButton" type="Button" parent="."]
 offset_left = 421.0
@@ -123,18 +127,15 @@ text = "   Begin!"
 
 [node name="RestartButton" type="Button" parent="."]
 visible = false
-offset_left = 424.0
-offset_top = 448.0
-offset_right = 740.0
-offset_bottom = 529.0
+offset_left = 423.0
+offset_top = 439.0
+offset_right = 739.0
+offset_bottom = 520.0
 theme_override_font_sizes/font_size = 25
 text = "Restart"
 
-[node name="Player_Controller" parent="." instance=ExtResource("5_55lr2")]
-position = Vector2(42, 550)
-
 [node name="SnowPlow" parent="." instance=ExtResource("4_0q7nr")]
-position = Vector2(1392, 436)
+position = Vector2(1383, 472)
 
 [node name="Win" type="Label" parent="."]
 visible = false
@@ -146,11 +147,10 @@ theme_override_font_sizes/font_size = 128
 text = "YOU SURVIVED!"
 
 [node name="Plowd" type="Label" parent="."]
-visible = false
-offset_left = 310.0
-offset_top = 210.0
-offset_right = 840.0
-offset_bottom = 385.0
+offset_left = 313.0
+offset_top = 128.0
+offset_right = 843.0
+offset_bottom = 303.0
 theme_override_font_sizes/font_size = 128
 text = "PLOW'D!"
 
@@ -160,6 +160,6 @@ scale = Vector2(0.775, 0.775)
 texture = ExtResource("9_ol3o8")
 
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
+[connection signal="shovel_handler" from="Player_Controller" to="." method="_on_player_shovel_handler"]
 [connection signal="pressed" from="BeginButton" to="." method="_on_begin_button_pressed"]
 [connection signal="pressed" from="RestartButton" to="." method="_on_restart_button_pressed"]
-[connection signal="shovel_handler" from="Player_Controller" to="." method="_on_player_shovel_handler"]

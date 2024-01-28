@@ -39,7 +39,8 @@ func _physics_process(delta):
 		#print(collision)
 
 func _process(delta):
-	position.x = lerp(position.x, nextposition, 0.99 * delta)
+	if $"..".lerp:
+		position.x = lerp(position.x, nextposition, 0.99 * delta)
 	#position.y -= 1 * delta
 	if Input.is_action_pressed($"..".move_input) and can_move:
 		shovel_next()
