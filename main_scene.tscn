@@ -1,7 +1,7 @@
 [gd_scene load_steps=9 format=3 uid="uid://de0sxabqe5cux"]
 
-[ext_resource type="PackedScene" uid="uid://c0gtdb3t1arxw" path="res://player_controller.tscn" id="1_kwk3m"]
-[ext_resource type="Texture2D" path="res://assets/worldassets/background.png" id="1_xvfph"]
+[ext_resource type="PackedScene" uid="uid://c0gtdb3t1arxw" path="res://driveway.tscn" id="1_kwk3m"]
+[ext_resource type="Texture2D" uid="uid://6etvbr5an2sq" path="res://assets/worldassets/background.png" id="1_xvfph"]
 [ext_resource type="Texture2D" uid="uid://6ayiovc4wsn4" path="res://assets/worldassets/Driveway28.png" id="2_7iobj"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_uwtkw"]

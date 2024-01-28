@@ -7,12 +7,12 @@
 radius = 40.1123
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_75r6f"]
-size = Vector2(311, 166)
+size = Vector2(435.5, 166)
 
 [node name="SnowPlow" type="Node2D"]
 
 [node name="Snowplow" type="RigidBody2D" parent="."]
-mass = 6.18
+mass = 46.42
 script = ExtResource("1_1lr8i")
 
 [node name="Snowplow2" type="Sprite2D" parent="Snowplow"]
@@ -29,5 +29,9 @@ position = Vector2(156, 76)
 shape = SubResource("CircleShape2D_ics2w")
 
 [node name="Body" type="CollisionShape2D" parent="Snowplow"]
-position = Vector2(61, -3)
+position = Vector2(-1.25, -3)
 shape = SubResource("RectangleShape2D_75r6f")
+
+[node name="FrontWheel2" type="CollisionShape2D" parent="Snowplow"]
+position = Vector2(-169, 76)
+shape = SubResource("CircleShape2D_ics2w")

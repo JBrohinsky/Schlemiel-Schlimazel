@@ -7,3 +7,5 @@ res://player_controller.gd
 res://player_controller.tscn
 res://snowplow.gd
 res://test.tscn
+res://snowfield.tscn
+res://driveway.tscn

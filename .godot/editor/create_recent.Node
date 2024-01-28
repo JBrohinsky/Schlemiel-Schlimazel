@@ -1,9 +1,10 @@
 CollisionShape2D
+CollisionPolygon2D
+Polygon2D
+AnimatedSprite2D
 RigidBody2D
 CharacterBody2D
 ColorRect
 Area2D
-CollisionPolygon2D
 GPUParticles2D
 TileMap
-AnimatedSprite2D
