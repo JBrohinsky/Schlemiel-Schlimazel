@@ -10,7 +10,7 @@ func _ready():
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
-	pb.value =  timer.time_left
+	pb.value =  (1 - timer.time_left / timer.wait_time) * 100
 
 
 func _on_timer_timeout():

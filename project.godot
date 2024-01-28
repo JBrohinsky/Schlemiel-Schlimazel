@@ -10,7 +10,7 @@ config_version=5
 
 [application]
 
-config/name="Schlemiel Schlimazel"
+config/name="Plow'd"
 run/main_scene="res://scenes/levels/plow_scene.tscn"
 config/features=PackedStringArray("4.2", "Forward Plus")
 

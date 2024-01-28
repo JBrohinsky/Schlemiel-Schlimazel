@@ -10,3 +10,4 @@ res://scenes/snowplow/snowplow.tscn
 res://scenes/snowplow/snowplow.gd
 res://scenes/levels/plow_scene.gd
 res://scenes/levels/SnowplowComing.gd
+res://scenes/driveway/driveway.tscn
