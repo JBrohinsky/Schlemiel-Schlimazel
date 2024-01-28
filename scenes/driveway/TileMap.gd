@@ -1,6 +1,6 @@
 extends TileMap
 
-@export var tile := 1
+@export var tile := 2
 
 var cleared := Vector2i(0,0)
 

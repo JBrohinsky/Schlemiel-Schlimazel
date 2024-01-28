@@ -1,0 +1,116 @@
+[gd_scene load_steps=18 format=3 uid="uid://gm0kxwkesjoi"]
+
+[ext_resource type="Texture2D" uid="uid://q0h3jcfa8gg8" path="res://assets/ControllerMap/Buttons.png" id="1_6b1lt"]
+[ext_resource type="Script" path="res://scenes/quicktime/buttons.gd" id="1_kc335"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_426wt"]
+atlas = ExtResource("1_6b1lt")
+region = Rect2(0, 168, 56, 56)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wpyxw"]
+atlas = ExtResource("1_6b1lt")
+region = Rect2(0, 0, 56, 56)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_akkts"]
+atlas = ExtResource("1_6b1lt")
+region = Rect2(56, 0, 56, 56)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wqf51"]
+atlas = ExtResource("1_6b1lt")
+region = Rect2(112, 0, 56, 56)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_62uwo"]
+atlas = ExtResource("1_6b1lt")
+region = Rect2(168, 0, 56, 56)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hkqje"]
+atlas = ExtResource("1_6b1lt")
+region = Rect2(0, 56, 56, 56)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_x85du"]
+atlas = ExtResource("1_6b1lt")
+region = Rect2(56, 56, 56, 56)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_smv6v"]
+atlas = ExtResource("1_6b1lt")
+region = Rect2(112, 56, 56, 56)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gawxq"]
+atlas = ExtResource("1_6b1lt")
+region = Rect2(168, 56, 56, 56)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_e07nm"]
+atlas = ExtResource("1_6b1lt")
+region = Rect2(0, 112, 56, 56)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bqgj5"]
+atlas = ExtResource("1_6b1lt")
+region = Rect2(56, 112, 56, 56)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cdyut"]
+atlas = ExtResource("1_6b1lt")
+region = Rect2(112, 112, 56, 56)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_e27mi"]
+atlas = ExtResource("1_6b1lt")
+region = Rect2(168, 112, 56, 56)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5f24v"]
+atlas = ExtResource("1_6b1lt")
+region = Rect2(56, 168, 56, 56)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_npmat"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_426wt")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wpyxw")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_akkts")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wqf51")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_62uwo")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hkqje")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_x85du")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_smv6v")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gawxq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_e07nm")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bqgj5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cdyut")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_e27mi")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5f24v")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="Buttons" type="Node2D" groups=["buttons"]]
+script = ExtResource("1_kc335")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_npmat")

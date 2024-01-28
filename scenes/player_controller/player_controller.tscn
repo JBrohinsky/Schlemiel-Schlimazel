@@ -1,8 +1,8 @@
 [gd_scene load_steps=5 format=3 uid="uid://bcua2nt31xlpp"]
 
 [ext_resource type="Script" path="res://scenes/player_controller/player_controller.gd" id="1_i1v4b"]
+[ext_resource type="SpriteFrames" uid="uid://7wkgr8puvi6a" path="res://assets/Shoveler/shoveler.tres" id="3_orkit"]
 [ext_resource type="Script" path="res://scenes/player_controller/Shoveler.gd" id="4_2v6e0"]
-[ext_resource type="SpriteFrames" uid="uid://7wkgr8puvi6a" path="res://assets/shoveler.tres" id="5_xkiym"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_wecne"]
 radius = 50.01
@@ -16,7 +16,7 @@ script = ExtResource("4_2v6e0")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Shoveler"]
 position = Vector2(3, -8)
-sprite_frames = ExtResource("5_xkiym")
+sprite_frames = ExtResource("3_orkit")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Shoveler"]
 position = Vector2(-2, -8)

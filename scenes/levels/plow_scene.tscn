@@ -1,10 +1,11 @@
-[gd_scene load_steps=11 format=3 uid="uid://c4x387uwoyc80"]
+[gd_scene load_steps=12 format=3 uid="uid://c4x387uwoyc80"]
 
 [ext_resource type="Texture2D" uid="uid://6etvbr5an2sq" path="res://assets/worldassets/background.png" id="1_01wd8"]
 [ext_resource type="Texture2D" uid="uid://6ayiovc4wsn4" path="res://assets/worldassets/Driveway28.png" id="2_n5i5w"]
 [ext_resource type="PackedScene" uid="uid://c0gtdb3t1arxw" path="res://scenes/driveway/driveway.tscn" id="3_uiv80"]
 [ext_resource type="PackedScene" uid="uid://phnel5y07u84" path="res://scenes/snowplow/snowplow.tscn" id="4_0q7nr"]
 [ext_resource type="PackedScene" uid="uid://bcua2nt31xlpp" path="res://scenes/player_controller/player_controller.tscn" id="5_55lr2"]
+[ext_resource type="PackedScene" uid="uid://cu75my3muqypm" path="res://scenes/quicktime/quick_time.tscn" id="6_h8t0s"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_uwtkw"]
 texture = ExtResource("2_n5i5w")
@@ -79,17 +80,21 @@ position = Vector2(20, 90)
 player_num = 1
 metadata/player_num = 1
 
-[node name="GPUParticles2D" type="GPUParticles2D" parent="."]
-position = Vector2(551, 1)
-amount = 871
-process_material = SubResource("ParticleProcessMaterial_mxx8v")
-lifetime = 10.0
-speed_scale = 2.0
-randomness = 1.0
-
 [node name="SnowPlow" parent="." instance=ExtResource("4_0q7nr")]
 position = Vector2(1393, 419)
 
 [node name="Player" parent="." instance=ExtResource("5_55lr2")]
 position = Vector2(26, 546)
 player_num = 1
+
+[node name="GPUParticles2D" type="GPUParticles2D" parent="Player"]
+position = Vector2(525, -545)
+amount = 871
+process_material = SubResource("ParticleProcessMaterial_mxx8v")
+lifetime = 10.0
+speed_scale = 2.0
+randomness = 1.0
+
+[node name="QuickTime" parent="." instance=ExtResource("6_h8t0s")]
+position = Vector2(461, 269)
+scale = Vector2(1.695, 1.695)
