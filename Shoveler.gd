@@ -2,7 +2,7 @@ extends RigidBody2D
 
 #signal shovel
 var can_move := true
-
+var nextposition := position.x
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -21,20 +21,22 @@ func shovel_next():
 	if $"..".player_num == 2:
 		direction = -1
 
-	position.x += 30 * direction
+	nextposition += 30 * direction
 	$AnimatedSprite2D.play("default")
 	#shovel.emit()
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _physics_process(delta):
 	pass
-	#linear_velocity = lerp(linear_velocity, Vector2(0,0), 0.99 * delta)
+
 	#move_and_slide()
 	#for index in get_slide_collision_count():
 		#var collision = get_slide_collision(index)
 		#print(collision)
 
-func _process(_delta):
+func _process(delta):
+	position.x = lerp(position.x, nextposition, 0.99 * delta)
+	#position.y -= 1 * delta
 	if Input.is_action_pressed($"..".move_input) and can_move:
 		shovel_next()
 		can_move = false

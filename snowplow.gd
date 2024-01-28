@@ -12,6 +12,6 @@ func _physics_process(delta):
 		#linear_velocity.x = -50000 * delta
 		#velocity.x = -500000 * delta
 		#move_and_slide()
-		add_constant_force(Vector2(-5000000 * delta, 0))
+		add_constant_force(Vector2(-7000000 * delta, 0))
 		
 #

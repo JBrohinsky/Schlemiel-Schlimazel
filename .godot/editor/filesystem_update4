@@ -1,11 +1,9 @@
-res://snowplow.tscn
+res://plow_scene.tscn
 res://Shoveler.gd
 res://TileMap.gd
 res://assets/shoveler.tres
-res://plow_scene.tscn
-res://player_controller.gd
+res://driveway.tscn
+res://snowplow.tscn
+res://test.tscn
 res://player_controller.tscn
 res://snowplow.gd
-res://test.tscn
-res://snowfield.tscn
-res://driveway.tscn
