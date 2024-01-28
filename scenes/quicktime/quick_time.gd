@@ -38,8 +38,9 @@ func get_random_input():
 	return random_key
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta):
+func _process(_delta):
 	if inputs.size() > 0 and Input.is_action_just_pressed(inputs[current_button]):
+		get_tree().call_group("buttons","pressed",current_button+1)
 		print(inputs[current_button])
 		current_button += 1
 		current_button = current_button % 4
@@ -48,3 +49,7 @@ func _process(delta):
 			get_tree().call_group("shoveler", "shovel_next")
 			next_qt_event()
 
+
+
+func _on_timer_timeout():
+	next_qt_event() # Replace with function body.

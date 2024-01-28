@@ -13,6 +13,10 @@ func set_frame(button : int, frame : int):
 	if button == buttonID:
 		$AnimatedSprite2D.frame = frame
 
+func pressed(button : int):
+	if button == buttonID:
+		$AnimatedSprite2D.frame = 13
+
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 	pass

@@ -5,3 +5,4 @@ res://scenes/quicktime/buttons.tscn
 res://scenes/quicktime/quick_time.tscn
 res://scenes/quicktime/quick_time.gd
 res://scenes/player_controller/Shoveler.gd
+res://scenes/quicktime/buttons.gd
