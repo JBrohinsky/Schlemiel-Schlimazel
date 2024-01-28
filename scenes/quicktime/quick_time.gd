@@ -8,11 +8,11 @@ var buttons = {
  "xbox_right" : 5  ,
  "xbox_up"    : 6  ,
  "xbox_down"  : 7  ,
- "xbox_left"  : 8  ,
- "xbox_lb"     : 9  ,
- "xbox_rb"     : 10 ,
- "xbox_lt"     : 11 ,
- "xbox_rt"     : 12 
+ "xbox_left"  : 8  #,
+# "xbox_lb"     : 9  ,
+# "xbox_rb"     : 10 ,
+# "xbox_lt"     : 11 ,
+# "xbox_rt"     : 12 
 }
 
 var inputs = []
