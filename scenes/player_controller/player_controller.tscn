@@ -22,4 +22,5 @@ sprite_frames = ExtResource("3_orkit")
 position = Vector2(-2, -8)
 shape = SubResource("CircleShape2D_wecne")
 
+[connection signal="shovel" from="Shoveler" to="." method="_on_shoveler_shovel"]
 [connection signal="animation_finished" from="Shoveler/AnimatedSprite2D" to="Shoveler" method="_on_animated_sprite_2d_animation_finished"]

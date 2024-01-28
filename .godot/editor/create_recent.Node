@@ -1,3 +1,5 @@
+Button
+ColorRect
 ProgressBar
 Timer
 AnimatedSprite2D
@@ -7,6 +9,5 @@ CollisionPolygon2D
 Polygon2D
 RigidBody2D
 CharacterBody2D
-ColorRect
 Area2D
 GPUParticles2D

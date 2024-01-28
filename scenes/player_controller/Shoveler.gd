@@ -1,6 +1,6 @@
 extends RigidBody2D
 
-#signal shovel
+signal shovel
 var can_move := true
 var nextposition := position.x
 
@@ -24,10 +24,10 @@ func shovel_next():
 	#print($"..".player_num)
 	#if $"..".player_num == 2:
 		#direction = -1
-	nextposition += 30 * direction
+	nextposition += 60 * direction
 	$AnimatedSprite2D.play("default")
 	can_move = false
-	#shovel.emit()
+	shovel.emit()
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _physics_process(delta):

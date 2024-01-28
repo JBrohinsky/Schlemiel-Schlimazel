@@ -16,7 +16,7 @@ func _process(delta):
 
 func clear_snow(current_tile : Vector2i):
 	set_cell(0, current_tile, 1, cleared)
-	
+	set_cell(0, Vector2(current_tile.x + 1,current_tile.y), 1, cleared)
 
 
 
@@ -28,4 +28,4 @@ func clear_snow(current_tile : Vector2i):
 func handle_clear_snow():
 	print("handlesnow")
 	clear_snow(Vector2i(tile, 0)) # Replace with function body.
-	tile += 1
+	tile += 2

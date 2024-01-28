@@ -10,8 +10,8 @@ func launch_snowplow():
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _physics_process(delta):
-	pass
-	#if Input.is_action_just_pressed("backspace"):
+	if Input.is_action_just_pressed("backspace"):
+		launch_snowplow()
 		#linear_velocity.x = -50000 * delta
 		#velocity.x = -500000 * delta
 		#move_and_slide()
