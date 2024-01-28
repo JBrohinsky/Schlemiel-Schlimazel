@@ -1,7 +1,7 @@
-res://scenes/quicktime/buttons.tscn
+res://scenes/levels/plow_scene.tscn
 res://scenes/driveway/TileMap.gd
+res://scenes/player_controller/player_controller.tscn
+res://scenes/quicktime/buttons.tscn
 res://scenes/quicktime/quick_time.tscn
 res://scenes/quicktime/quick_time.gd
-res://scenes/levels/plow_scene.tscn
-res://scenes/player_controller/player_controller.tscn
 res://scenes/player_controller/Shoveler.gd

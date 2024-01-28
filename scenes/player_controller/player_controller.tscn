@@ -10,7 +10,7 @@ radius = 50.01
 [node name="Player_Controller" type="Node2D"]
 script = ExtResource("1_i1v4b")
 
-[node name="Shoveler" type="RigidBody2D" parent="."]
+[node name="Shoveler" type="RigidBody2D" parent="." groups=["shoveler"]]
 mass = 1.9
 script = ExtResource("4_2v6e0")
 

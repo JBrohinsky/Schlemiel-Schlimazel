@@ -177,4 +177,4 @@ script = ExtResource("1_1r86e")
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = SubResource("TileSet_tg1c3")
 format = 2
-layer_0/tile_data = PackedInt32Array(-2, 1, 65536, -65536, 1, 65536, -65534, 1, 65536, -65533, 1, 65536, -65535, 1, 65536)
+layer_0/tile_data = PackedInt32Array(-2, 1, 65536, -65536, 1, 65536, -65535, 1, 65536, -65534, 1, 65536, -65533, 1, 65536)

@@ -16,7 +16,7 @@ var buttons = {
 }
 
 var inputs = []
-
+var current_button := 0
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	pass
@@ -39,5 +39,12 @@ func get_random_input():
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
-	if Input.is_action_pressed("enter"):
-		next_qt_event()
+	if inputs.size() > 0 and Input.is_action_just_pressed(inputs[current_button]):
+		print(inputs[current_button])
+		current_button += 1
+		current_button = current_button % 4
+		print(current_button)
+		if current_button == 0:
+			get_tree().call_group("shoveler", "shovel_next")
+			next_qt_event()
+
