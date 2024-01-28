@@ -20,6 +20,7 @@ func _process(delta):
 
 
 func _on_timer_timeout():
+	$Player_Controller.lerp = false
 	$SnowplowComing.hide()
 	$QuickTime.hide()
 	$SnowPlow/Snowplow.launch_snowplow() # Replace with function body.

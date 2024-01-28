@@ -98,7 +98,7 @@ position = Vector2(461, 269)
 scale = Vector2(1.695, 1.695)
 
 [node name="Timer" type="Timer" parent="."]
-wait_time = 40.0
+wait_time = 30.0
 one_shot = true
 
 [node name="SnowplowComing" type="ProgressBar" parent="."]
