@@ -23,7 +23,7 @@ func _on_timer_timeout():
 	$Player_Controller.lerp = false
 	$SnowplowComing.hide()
 	$QuickTime.hide()
-	$SnowPlow/Snowplow.launch_snowplow() # Replace with function body.
+	$SnowPlow/Snowplow.launch_snowplow()
 	await get_tree().create_timer(3.0).timeout
 	$ColorRect.show()
 	$Plowd.show()
@@ -31,12 +31,14 @@ func _on_timer_timeout():
 
 
 func _on_begin_button_pressed():
-	$ColorRect.hide()# Replace with function body.
+	$ColorRect.hide()
 	$BeginButton.hide()
 	$Timer.start()
 	$Start.hide()
 	$Plowd.hide()
 	$QuickTime.show()
+	$CheckButton.hide()
+	$ImpossibleMode.hide()
 
 func _on_player_shovel_handler():
 	points += 1
@@ -52,4 +54,11 @@ func game_over():
 	$Win.show()
 	
 func _on_restart_button_pressed():
-	get_tree().reload_current_scene() # Replace with function body.
+	get_tree().reload_current_scene() 
+
+
+func _on_check_button_toggled(toggled_on):
+	if toggled_on:
+		$Timer.wait_time = 10
+	else:
+		$Timer.wait_time = 40 

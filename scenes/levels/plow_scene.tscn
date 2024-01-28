@@ -151,6 +151,7 @@ offset_left = 313.0
 offset_top = 128.0
 offset_right = 843.0
 offset_bottom = 303.0
+rotation = -0.0982125
 theme_override_font_sizes/font_size = 128
 text = "PLOW'D!"
 
@@ -159,7 +160,21 @@ position = Vector2(529, 388)
 scale = Vector2(0.775, 0.775)
 texture = ExtResource("9_ol3o8")
 
+[node name="CheckButton" type="CheckButton" parent="."]
+offset_left = 44.0
+offset_top = 32.0
+offset_right = 94.0
+offset_bottom = 70.0
+
+[node name="ImpossibleMode" type="Label" parent="."]
+offset_left = 98.0
+offset_top = 37.0
+offset_right = 230.0
+offset_bottom = 60.0
+text = "impossible mode"
+
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
 [connection signal="shovel_handler" from="Player_Controller" to="." method="_on_player_shovel_handler"]
 [connection signal="pressed" from="BeginButton" to="." method="_on_begin_button_pressed"]
 [connection signal="pressed" from="RestartButton" to="." method="_on_restart_button_pressed"]
+[connection signal="toggled" from="CheckButton" to="." method="_on_check_button_toggled"]

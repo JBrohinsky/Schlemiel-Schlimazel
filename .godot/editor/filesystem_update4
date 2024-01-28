@@ -6,3 +6,4 @@ res://scenes/quicktime/quick_time.tscn
 res://scenes/snowplow/snowplow.tscn
 res://scenes/driveway/driveway.tscn
 res://test.tscn
+res://scenes/levels/plow_scene.gd
