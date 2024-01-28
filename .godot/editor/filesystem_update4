@@ -6,3 +6,7 @@ res://scenes/quicktime/quick_time.tscn
 res://scenes/quicktime/quick_time.gd
 res://scenes/player_controller/Shoveler.gd
 res://scenes/quicktime/buttons.gd
+res://scenes/snowplow/snowplow.tscn
+res://scenes/snowplow/snowplow.gd
+res://scenes/levels/plow_scene.gd
+res://scenes/levels/SnowplowComing.gd

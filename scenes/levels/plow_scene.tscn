@@ -1,6 +1,7 @@
-[gd_scene load_steps=13 format=3 uid="uid://c4x387uwoyc80"]
+[gd_scene load_steps=14 format=3 uid="uid://c4x387uwoyc80"]
 
 [ext_resource type="Texture2D" uid="uid://6etvbr5an2sq" path="res://assets/worldassets/background.png" id="1_01wd8"]
+[ext_resource type="Script" path="res://scenes/levels/plow_scene.gd" id="1_xsc1j"]
 [ext_resource type="Texture2D" uid="uid://6ayiovc4wsn4" path="res://assets/worldassets/Driveway28.png" id="2_n5i5w"]
 [ext_resource type="PackedScene" uid="uid://c0gtdb3t1arxw" path="res://scenes/driveway/driveway.tscn" id="3_uiv80"]
 [ext_resource type="PackedScene" uid="uid://phnel5y07u84" path="res://scenes/snowplow/snowplow.tscn" id="4_0q7nr"]
@@ -65,6 +66,7 @@ tangential_accel_max = 2.58
 tangential_accel_curve = SubResource("CurveTexture_p37d4")
 
 [node name="MainScene" type="Node2D"]
+script = ExtResource("1_xsc1j")
 
 [node name="Background" type="Sprite2D" parent="."]
 position = Vector2(580, 327)
@@ -100,3 +102,16 @@ randomness = 1.0
 [node name="QuickTime" parent="." instance=ExtResource("6_h8t0s")]
 position = Vector2(461, 269)
 scale = Vector2(1.695, 1.695)
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 100.0
+one_shot = true
+autostart = true
+
+[node name="SnowplowComing" type="ProgressBar" parent="."]
+offset_left = 209.0
+offset_top = 42.0
+offset_right = 950.0
+offset_bottom = 113.0
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
