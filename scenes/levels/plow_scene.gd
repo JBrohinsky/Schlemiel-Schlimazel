@@ -15,20 +15,25 @@ func _ready():
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 	pb.value =  (1 - timer.time_left / timer.wait_time) * 100
+	if Input.is_action_pressed("xbox_start"):
+		_on_begin_button_pressed()
 
 
 func _on_timer_timeout():
+	$SnowplowComing.hide()
 	$QuickTime.hide()
 	$SnowPlow/Snowplow.launch_snowplow() # Replace with function body.
 	await get_tree().create_timer(3.0).timeout
 	$ColorRect.show()
+	$Plowd.show()
+	$RestartButton.show()
 
 
 func _on_begin_button_pressed():
 	$ColorRect.hide()# Replace with function body.
 	$BeginButton.hide()
 	$Timer.start()
-
+	$Start.hide()
 
 func _on_player_shovel_handler():
 	points += 1
@@ -36,5 +41,12 @@ func _on_player_shovel_handler():
 		game_over()
 
 func game_over():
+	$SnowplowComing.hide()
+	$QuickTime.hide()
 	$Timer.stop()
 	$ColorRect.show()
+	$RestartButton.show()
+	$Win.show()
+	
+func _on_restart_button_pressed():
+	get_tree().reload_current_scene() # Replace with function body.

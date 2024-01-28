@@ -41,8 +41,8 @@ func _physics_process(delta):
 func _process(delta):
 	position.x = lerp(position.x, nextposition, 0.99 * delta)
 	#position.y -= 1 * delta
-	#if Input.is_action_pressed($"..".move_input) and can_move:
-		#shovel_next()
+	if Input.is_action_pressed($"..".move_input) and can_move:
+		shovel_next()
 		#can_move = false
 	#print("velocity.x" + str(velocity.x))
 	#if linear_velocity.x <= 11.5:
