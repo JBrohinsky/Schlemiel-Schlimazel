@@ -7,3 +7,6 @@ res://snowplow.tscn
 res://test.tscn
 res://player_controller.tscn
 res://snowplow.gd
+res://scenes/driveway/driveway.tscn
+res://scenes/player_controller/player_controller.tscn
+res://scenes/levels/plow_scene.tscn

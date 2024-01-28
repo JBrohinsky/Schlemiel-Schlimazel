@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=3 uid="uid://phnel5y07u84"]
 
-[ext_resource type="Script" path="res://snowplow.gd" id="1_1lr8i"]
 [ext_resource type="Texture2D" uid="uid://cip0hl2hf7wfw" path="res://assets/worldassets/snowplow.png" id="1_3qfh7"]
+[ext_resource type="Script" path="res://scenes/snowplow/snowplow.gd" id="1_y8bvs"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_ics2w"]
 radius = 40.1123
@@ -15,7 +15,7 @@ size = Vector2(435.5, 166)
 collision_layer = 7
 collision_mask = 7
 mass = 46.42
-script = ExtResource("1_1lr8i")
+script = ExtResource("1_y8bvs")
 
 [node name="Snowplow2" type="Sprite2D" parent="Snowplow"]
 position = Vector2(1, 5)

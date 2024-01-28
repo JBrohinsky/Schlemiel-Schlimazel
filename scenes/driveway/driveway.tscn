@@ -1,9 +1,9 @@
 [gd_scene load_steps=9 format=3 uid="uid://c0gtdb3t1arxw"]
 
-[ext_resource type="Script" path="res://player_controller.gd" id="1_i1v4b"]
+[ext_resource type="Script" path="res://scenes/player_controller/player_controller.gd" id="1_i1v4b"]
 [ext_resource type="Texture2D" uid="uid://glj1d1dqxxek" path="res://assets/worldassets/Driveway.png" id="1_tytjm"]
 [ext_resource type="Texture2D" uid="uid://6ayiovc4wsn4" path="res://assets/worldassets/Driveway28.png" id="2_md5iu"]
-[ext_resource type="Script" path="res://TileMap.gd" id="3_3251b"]
+[ext_resource type="Script" path="res://scenes/driveway/TileMap.gd" id="3_3251b"]
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_qfsl6"]
 friction = 0.06

@@ -11,9 +11,8 @@ config_version=5
 [application]
 
 config/name="Schlemiel Schlimazel"
-run/main_scene="res://plow_scene.tscn"
+run/main_scene="res://scenes/levels/plow_scene.tscn"
 config/features=PackedStringArray("4.2", "Forward Plus")
-config/icon="res://icon.svg"
 
 [display]
 

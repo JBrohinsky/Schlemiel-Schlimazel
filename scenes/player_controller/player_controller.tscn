@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=3 uid="uid://bcua2nt31xlpp"]
 
-[ext_resource type="Script" path="res://player_controller.gd" id="1_i1v4b"]
-[ext_resource type="Script" path="res://Shoveler.gd" id="4_2v6e0"]
+[ext_resource type="Script" path="res://scenes/player_controller/player_controller.gd" id="1_i1v4b"]
+[ext_resource type="Script" path="res://scenes/player_controller/Shoveler.gd" id="4_2v6e0"]
 [ext_resource type="SpriteFrames" uid="uid://7wkgr8puvi6a" path="res://assets/shoveler.tres" id="5_xkiym"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_wecne"]
