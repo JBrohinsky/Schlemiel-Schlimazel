@@ -2,6 +2,10 @@
 .import/
 export.cfg
 export_presets.cfg
+.godot/
+
+# files created during failed saves
+*.tmp
 
 # Imported translations (automatically generated from CSV files)
 *.translation
@@ -10,3 +14,4 @@ export_presets.cfg
 .mono/
 data_*/
 movie.avi
+.DS_Store
