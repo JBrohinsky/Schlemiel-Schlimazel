@@ -39,6 +39,7 @@ func _on_begin_button_pressed():
 	$QuickTime.show()
 	$CheckButton.hide()
 	$ImpossibleMode.hide()
+	$ControllerChoice.hide()
 
 func _on_player_shovel_handler():
 	points += 1
@@ -62,3 +63,8 @@ func _on_check_button_toggled(toggled_on):
 		$Timer.wait_time = 10
 	else:
 		$Timer.wait_time = 40 
+
+
+func _on_option_button_item_selected(index):
+	$QuickTime.switch_controllers(index)
+	$QuickTime.next_qt_event() # Replace with function body.

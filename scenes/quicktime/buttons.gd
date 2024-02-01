@@ -12,6 +12,9 @@ func _ready():
 func set_frame(button : int, frame : int):
 	if button == buttonID:
 		$AnimatedSprite2D.frame = frame
+		
+func set_type(type:StringName):
+	$AnimatedSprite2D.animation = type
 
 func pressed(button : int):
 	if button == buttonID:

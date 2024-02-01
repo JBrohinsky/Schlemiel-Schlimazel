@@ -22,6 +22,12 @@ func _ready():
 	pass
 # get_tree().call_group("buttons","set_frame",2,6)
 
+func switch_controllers(type:int):
+	if type == 0: #xbox
+		get_tree().call_group("buttons","set_type","default")
+	else:
+		get_tree().call_group("buttons","set_type","playstation")
+
 func next_qt_event():
 	inputs.clear()
 	for i in range(1,5):

@@ -173,8 +173,21 @@ offset_right = 230.0
 offset_bottom = 60.0
 text = "impossible mode"
 
+[node name="ControllerChoice" type="OptionButton" parent="."]
+offset_left = 57.0
+offset_top = 74.0
+offset_right = 231.0
+offset_bottom = 107.0
+item_count = 2
+selected = 0
+popup/item_0/text = "xbox"
+popup/item_0/id = 0
+popup/item_1/text = "playstation"
+popup/item_1/id = 1
+
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
 [connection signal="shovel_handler" from="Player_Controller" to="." method="_on_player_shovel_handler"]
 [connection signal="pressed" from="BeginButton" to="." method="_on_begin_button_pressed"]
 [connection signal="pressed" from="RestartButton" to="." method="_on_restart_button_pressed"]
 [connection signal="toggled" from="CheckButton" to="." method="_on_check_button_toggled"]
+[connection signal="item_selected" from="ControllerChoice" to="." method="_on_option_button_item_selected"]
