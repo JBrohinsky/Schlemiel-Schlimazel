@@ -1,9 +1,0 @@
-res://assets/Shoveler/shoveler.tres::5ec82b57b1c2b387559bb1d276d7ad26::1706410188::res://.godot/exported/133200997/export-17b8f7337ee53757e4a789ec45ef7480-shoveler.res
-res://scenes/driveway/driveway.tscn::6e05477a8e6b6f2cb3707d2e42d74428::1706473366::res://.godot/exported/133200997/export-04540e337ea246ced0347ad65e54e204-driveway.scn
-res://scenes/levels/main_scene.tscn::044b6f0f75a2f50bc3a233b2581f078f::1706411088::res://.godot/exported/133200997/export-564a72e05aecda2ea0209795eae151da-main_scene.scn
-res://scenes/levels/plow_scene.tscn::a4f951e5290d98ec179ae68fec32fc96::1706473591::res://.godot/exported/133200997/export-ec2a09d79f4e634fd852b52a7d116f5e-plow_scene.scn
-res://scenes/player_controller/player_controller.tscn::23dd6e78af6d44b1a9437c5d199264a3::1706473366::res://.godot/exported/133200997/export-efbf9c4a7a45df033ff20964d25e130b-player_controller.scn
-res://scenes/quicktime/buttons.tscn::0425a5684f21feb4087252813fe6e721::1706473366::res://.godot/exported/133200997/export-b7fce14d567d2ee6a7f3afc11d2e50ad-buttons.scn
-res://scenes/quicktime/quick_time.tscn::ad07fcfb2700a3efa14ee523027ea912::1706473366::res://.godot/exported/133200997/export-4d53ee860f1a6ddd4f0993a748cd4f7a-quick_time.scn
-res://scenes/snowplow/snowplow.tscn::3d352f386067b85b549d05ce8bf0f899::1706473366::res://.godot/exported/133200997/export-81e79cdbd7040d9be3878b862b6ebba5-snowplow.scn
-res://test.tscn::1c1847e3a4fe7c691966e765e5783fad::1706473366::res://.godot/exported/133200997/export-f0a4ea32b72b64218d23e48a955cbc61-test.scn
